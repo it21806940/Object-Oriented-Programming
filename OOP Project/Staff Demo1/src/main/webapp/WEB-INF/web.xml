@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         <servlet>
+            <servlet-name>search</servlet-name>
+            <servlet-class>com.staff.SearchAccServlet</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+            <servlet-name>search</servlet-name> 
+            <url-pattern>/search</url-pattern> 
+         </servlet-mapping>
+         
+         <servlet>
+         
+             <servlet-name>createshift</servlet-name>
+             <servlet-class>com.staff.CreateShift</servlet-class>
+         
+         </servlet>
+         
+         <servlet-mapping>
+            <servlet-name>createshift</servlet-name>
+            <url-pattern>/create</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+            <servlet-name>updateshift</servlet-name>
+            <servlet-class>com.staff.UpdateShiftServlet</servlet-class>
+         
+         </servlet>
+         
+         <servlet-mapping>
+           <servlet-name>updateshift</servlet-name>
+           <url-pattern>/update</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+             <servlet-name>deleteshift</servlet-name>
+             <servlet-class>com.staff.DeleteShiftServlet</servlet-class>
+         
+         </servlet>
+         
+         <servlet-mapping>
+              <servlet-name>deleteshift</servlet-name>
+              <url-pattern>/delete</url-pattern>
+         </servlet-mapping>
+</web-app>
